@@ -13,6 +13,11 @@ steps:
     packageType: sdk
     version: '6.x'
 
+- task: UseNode@1
+  displayName: 'Use Node.js v20'
+  inputs:
+    version: '20.x'
+
 - task: Npm@1
   displayName: 'Run npm install'
   inputs:
